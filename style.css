@@ -79,23 +79,24 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background: url(To-Do-Img/images/checked.png);
+    background: url(images/unchecked.png);
     background-size: cover;
     top: 12px;
     left: 8px;
 
 }
 
-ul li.checked::before{
-    background: url(To-Do-Img/images/checkmark.png);
-}
+
 
 ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
 
-
+ul li.checked::before{
+    background: url(images/checked.png);
+    background-size: cover;
+}
 
 ul li span{
     position: absolute;
