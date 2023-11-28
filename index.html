@@ -7,7 +7,30 @@
     <title>To-Do List</title>
 </head>
 <body>
-    <div class="container">
+    <div class="login-container" id="login-container">
+        <div class="form-box">
+            <h1 id="title" onclick="consoleText()">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="email" placeholder="Email" id="username">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Password" id="password">
+                    </div>
+                    <p>Forgot Password? <a href="#">Click Here</a></p>
+                </div>
+            </form>
+            <div class="btn-field">
+                <button type="button" id="signUpBtn" onclick="signUp()" >Sign Up</button>
+                <button type="button" class="disable" id="signInBtn" onclick="login()">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="todo-container" style="display: none;">
         <div class="todo-app">
             <h2>To-Do List <img src="./images/icon.png" alt="Icon"></h2>
             <div class="row">
@@ -19,7 +42,6 @@
                 <li>Task 2</li>
                 <li>Task 3</li> -->
             </ul>
-            
         </div>
     </div>  
     <script src="script.js"></script>
